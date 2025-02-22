@@ -4,6 +4,7 @@ Return config on servers to start web services from JupyterLab
 See https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html
 for more information.
 """
+__version__ = '0.01'
 
 import os
 
