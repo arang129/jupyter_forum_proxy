@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="jupyter-notes-proxy",
+    name="jupyter-mktinfo-proxy",
     version='0.0.3',
     url="https://gitlab.mpcdf.mpg.de/khr/jupyter-streamlit-proxy",
     author="Klaus Reuter",
@@ -14,10 +14,10 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'notes = jupyter_notes_proxy:setup_notes_proxy',
+            'mktinfo = jupyter_mktinfo_proxy:setup_mktinfo_proxy',
         ]
     },
     package_data={
-        'jupyter_notes_proxy': ['icons/*'],
+        'jupyter_mktinfo_proxy': ['icons/*'],
     },
 )
