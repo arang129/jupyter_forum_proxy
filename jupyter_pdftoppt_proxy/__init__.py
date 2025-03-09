@@ -19,7 +19,7 @@ def setup_mktinfo_proxy():
     """
     return {
         'command': [
-            "streamlit", "run", "/home/jupyter-data/webapp/yfinanceboard/main.py",
+            "streamlit", "run", "/home/jupyter-data/webapp/pdf_to_pptx/app.py",
             "--browser.gatherUsageStats", "false",
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
@@ -30,7 +30,7 @@ def setup_mktinfo_proxy():
         'environment': {},
         'timeout': 30.0,
         'launcher_entry': {
-            'title': '市場觀測',
-            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'stockboard.svg'),
+            'title': '論文轉簡報檔',
+            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'ppt.svg'),
         }
     }
