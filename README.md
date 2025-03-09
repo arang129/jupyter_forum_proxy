@@ -7,11 +7,11 @@ within JupyterLab to launch and access the Streamlit web app via the GUI.
 
 As the entry point for the webapp launch it expects a script at
 
-`sudo -E pip install git+https://github.com/arang129/jupyter_pdftoppt_proxy.git`
+`pip install git+https://github.com/arang129/jupyter_pdftoppt_proxy.git`
 
-`sudo -E pip install --upgrade git+https://github.com/arang129/jupyter_pdftoppt_proxy.git`
+`pip install --upgrade git+https://github.com/arang129/jupyter_pdftoppt_proxy.git`
 
-`sudo -E pip uninstall jupyter_pdftoppt_proxy`
+`pip uninstall jupyter_pdftoppt_proxy`
 
 which has the actual streamlit launch command inside, including the actual
 file name of the web application.
