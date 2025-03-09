@@ -1,5 +1,5 @@
-# jupyter-mktinfo-proxy : A Jupyter server proxy that enables Streamlit on top of JupyterLab/BinderHub
-透過streamlit deploy 市場資訊觀測的網站
+# jupyter-pdftoppt-proxy : A Jupyter server proxy that enables Streamlit on top of JupyterLab/BinderHub
+將論文轉成投影片 (PDF檔案轉成PPTX檔案)
 jupyter-streamlit-proxy exposes and launches Streamlit via the relative URL
 'streamlit', thereby enabling Streamlit-based web applications being launched
 on top of an existing Binder infrastructure.  In addition it provides a button
