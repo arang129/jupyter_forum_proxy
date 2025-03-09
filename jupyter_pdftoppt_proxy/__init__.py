@@ -9,7 +9,7 @@ __version__ = '0.01'
 import os
 
 
-def setup_mktinfo_proxy():
+def setup_pdftoppt_proxy():
     """
     Proxy wrapper to launch Streamlit from JupyterHub on Binder
 
