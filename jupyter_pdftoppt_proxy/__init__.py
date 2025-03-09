@@ -19,7 +19,7 @@ def setup_pdftoppt_proxy():
     """
     return {
         'command': [
-            "streamlit", "run", "/home/jupyter-data/webapp/pdf_to_pptx/app.py",
+            "streamlit", "run", "/home/jupyter-data/webapp/pdftopptx/app.py",
             "--browser.gatherUsageStats", "false",
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
