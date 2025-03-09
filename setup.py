@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="jupyter-mktinfo-proxy",
+    name="jupyter-pdftoppt-proxy",
     version='0.0.3',
     url="https://gitlab.mpcdf.mpg.de/khr/jupyter-streamlit-proxy",
     author="Klaus Reuter",
@@ -14,10 +14,10 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'mktinfo = jupyter_mktinfo_proxy:setup_mktinfo_proxy',
+            'pdftoppt = jupyter_pdftoppt_proxy:setup_pdftoppt_proxy',
         ]
     },
     package_data={
-        'jupyter_mktinfo_proxy': ['icons/*'],
+        'jupyter_pdftoppt_proxy': ['icons/*'],
     },
 )
