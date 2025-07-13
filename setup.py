@@ -1,8 +1,8 @@
 import setuptools
 
 setuptools.setup(
-    name="jupyter-pdftoppt-proxy",
-    version='0.0.3',
+    name="jupyter-control-proxy",
+    version='0.0.1',
     url="https://gitlab.mpcdf.mpg.de/khr/jupyter-streamlit-proxy",
     author="Klaus Reuter",
     description="klaus.reuter@mpcdf.mpg.de",
@@ -14,10 +14,10 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'pdftoppt = jupyter_pdftoppt_proxy:setup_pdftoppt_proxy',
+            'control = jupyter_control_proxy:setup_control_proxy',
         ]
     },
     package_data={
-        'jupyter_pdftoppt_proxy': ['icons/*'],
+        'jupyter_control_proxy': ['icons/*'],
     },
 )
