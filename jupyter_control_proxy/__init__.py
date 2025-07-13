@@ -9,7 +9,7 @@ __version__ = '0.01'
 import os
 
 
-def setup_pdftoppt_proxy():
+def setup_control_proxy():
     """
     Proxy wrapper to launch Streamlit from JupyterHub on Binder
 
@@ -19,7 +19,7 @@ def setup_pdftoppt_proxy():
     """
     return {
         'command': [
-            "streamlit", "run", "/home/jupyter-data/webapp/pdftoppt/app.py",
+            "streamlit", "run", "/home/jupyter-data/control/control.py",
             "--browser.gatherUsageStats", "false",
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
@@ -30,7 +30,7 @@ def setup_pdftoppt_proxy():
         'environment': {},
         'timeout': 30.0,
         'launcher_entry': {
-            'title': '論文轉簡報檔',
-            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'ppt.svg'),
+            'title': '控制台',
+            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'control.svg'),
         }
     }
