@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="jupyter-control-proxy",
+    name="jupyter-forum-proxy",
     version='0.0.1',
     url="https://gitlab.mpcdf.mpg.de/khr/jupyter-streamlit-proxy",
     author="Klaus Reuter",
@@ -14,10 +14,10 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'control = jupyter_control_proxy:setup_control_proxy',
+            'forum = jupyter_forum_proxy:setup_forum_proxy',
         ]
     },
     package_data={
-        'jupyter_control_proxy': ['icons/*'],
+        'jupyter_forum_proxy': ['icons/*'],
     },
 )
