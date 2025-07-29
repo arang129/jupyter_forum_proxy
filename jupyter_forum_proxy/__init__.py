@@ -9,7 +9,7 @@ __version__ = '0.01'
 import os
 
 
-def setup_control_proxy():
+def setup_forum_proxy():
     """
     Proxy wrapper to launch Streamlit from JupyterHub on Binder
 
@@ -19,7 +19,7 @@ def setup_control_proxy():
     """
     return {
         'command': [
-            "streamlit", "run", "/home/jupyter-data/control/control.py",
+            "streamlit", "run", "/home/jupyter-data/webapp/forum/forum.py",
             "--browser.gatherUsageStats", "false",
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
@@ -30,7 +30,7 @@ def setup_control_proxy():
         'environment': {},
         'timeout': 30.0,
         'launcher_entry': {
-            'title': '控制台',
-            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'control.svg'),
+            'title': 'Forum',
+            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'forum.svg'),
         }
     }
